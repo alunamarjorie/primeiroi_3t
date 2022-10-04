@@ -16,4 +16,20 @@ function alo(){
     document.write(tabuada + " x 9 = " + (tabuada * 9) + "<br>");
     document.write(tabuada + " x 10 = " + (tabuada * 10) + "<br>");
 }
+
+function escreva(){
+ for(var i=1; i <=10; i++){
+     for(var j = 1; j<=10; j++){
+        document.write(i + " x " + j + " = " + (j*i)+"<br>");
+     }
+     document.write("<br>");
+   
+    }
+
+}
+
+function quadrado(){
+    for(var i=2; i< 11; i++){
+        document.write("o quadrado de " + i + " é " + (i*i)+"<br>");
+    }
 }
