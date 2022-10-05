@@ -2,8 +2,8 @@
 // document.write("Estou na página.");
 // console.log("Eu estou no console.");
 let tabuada = 6;
-
 function alo(){
+    let tabuada = document.getElementById("entrada").value;
     document.write("<h1>tabuada do " + tabuada + " </h1>");
     document.write(tabuada + " x 1 = " + (tabuada * 1) + "<br>");
     document.write(tabuada + " x 2 = " + (tabuada * 2) + "<br>");
@@ -33,3 +33,11 @@ function quadrado(){
         document.write("o quadrado de " + i + " é " + (i*i)+"<br>");
     }
 }
+
+function total(){
+    let val = document.getElementById("valor").value;
+    let ju = document.getElementById("juros").value;
+    let resultado = (val * ((ju/100)+1));
+    document.write("o total é de: " + resultado);
+}
+
