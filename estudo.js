@@ -49,6 +49,7 @@ function soma(){
     let r = Number(n1) + Number(n2) + Number(n3) + Number(n4);
     document.getElementById("resultado").innerHTML = r;
 }
+
 function média(){
     let n1 = document.getElementById("n1").value;
     let n2 = document.getElementById("n2").value;
@@ -57,6 +58,7 @@ function média(){
     let r = (Number(n1) + Number(n2) + Number(n3) + Number(n4))/4;
     document.getElementById("resultado").innerHTML = r;
 }
+
 function falta(){
     let n1 = document.getElementById("n1").value;
     let n2 = document.getElementById("n2").value;
