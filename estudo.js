@@ -45,6 +45,14 @@ function total(){
         return
     }
 
+    if(!Number(ju)){
+        alert("O valor do juros deve ser um número.");
+        document.getElementById("juros").value = "";
+        document.getElementById("juros").focus();
+        return
+    }
+
+
     let resultado = (val * ((ju/100)+1));
     document.write("o total é de: " + resultado);
 }
@@ -79,3 +87,5 @@ function falta(){
     
 }
 
+
+ 
