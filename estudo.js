@@ -33,16 +33,19 @@ function quadrado(){
         document.write("o quadrado de " + i + " é " + (i*i)+"<br>");
     }
 }
-
+function moeda(atual) {
+    return atual.toLocaleString('pt-br',{style: 'currency', currency: 'BRL'});
+}
 function total(){
     let val = document.getElementById("valor").value;
     let ju = document.getElementById("juros").value;
+
     let t = document.getElementById("meses").value;
     let  resultado = 0;
-    for(let m = 1; m < t; m++){
+    for(let m = 1; m <= t; m++){
     resultado = (val * ((ju/100)+1));
     val = resultado;
-    document.write("mes " + m + " valor de " + val);
+    document.write("meses " + m + " valor de " + moeda(val) + "<br>");
 
     }
 
