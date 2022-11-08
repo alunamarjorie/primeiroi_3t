@@ -1,19 +1,44 @@
-.Calculadora{
-   background-color: antiquewhite;
-   width: 200px;
-   padding: 10px;
+.calculadora {
+    background: black;
+    width: 200px;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 5px 5px purple;
+    text-align: center;
 }
-
+.calculadora input {
+    background: purple;
+    border: none;
+    padding: 5px;
+    border-radius: 5px;
+}
+.calculadora input :focus {
+    background: black;
+    color: white;
+}
 #btnCalc {
-     background: bisque;
-     color: black;
-     padding: 2px;
+    background: purple;
+    color: white;
+    padding: 5px;
 }
-
 #btnCalc:hover {
-     background: burlywood;
-     color: black;
-     cursor: pointer;
+    background: violet;
+    color: white;
+    cursor: pointer;
+}
+.spResultado{
+    background: black;
+    color: white;
+    padding: 4px;
+    margin: 2px;
+}
+.spMes {
+    color: white;
+    border-width: 1px;
+    border-style: dashed;
+    border-color: purple;
+    text-align: start;
+    text-align: center;
 }
 
 
